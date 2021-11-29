@@ -1,12 +1,125 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <title>素敵カフェ</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+  
+  <title>CITY Lab</title>
 </head>
 <body>
-  <h1>素敵なカフェ</h1>
-  <p>素敵なカフェです。ぜひお越しください。</p>
+  <header class="header">
+    <div class="logo">
+      <a class="logo-link" href="#"><img src="img/CITY Lab.png" alt="ロゴリンク"></a>
+    </div>
+    <div class="header__right">
+      <ul class="header__nav">
+        <li class="header__nav-item"><a href="#">サービス</a> </li>
+        <li class="header__nav-item"><a href="#">ニュース</a></li>
+        <li class="header__nav-item"><a href="#">CSR</a></li>
+        <li class="header__nav-item"><a href="#">IR情報</a></li>
+        <li class="header__nav-item"><a href="#">採用情報</a></li>
+        <li class="header__nav-item"><a href="#">会社情報</a></li>
+      </ul>
+      <div class="header__btn">
+        <a class="btn" href="#">お問い合わせ</a>
+      </div>
+
+      <div id="drawer_toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+  
+      <nav id="global_nav">
+        <ul>
+          <li><a href="#">サービス</a></li>
+          <li><a href="#">ニュース</a></li>
+          <li><a href="#">CSR</a></li>
+          <li><a href="#">IR情報</a></li>
+          <li><a href="#">採用情報</a></li>
+          <li><a href="#">会社情報</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+  <section>
+    <div class="mainvisual" style="background-image: url(img/mainvisual.jpg);">
+      <div class="mainvisual__wrapper">
+        <h1 class="mainvisual__title">City<br>Specialist</h1>
+        <p class="mainvisual__text">豊富なアイデアと実績で<br>街の課題を解決</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="news">
+      <div class="news__wrapper">
+        <div class="news__title-link">
+          <h1 class="section__title">News</h1>
+          <a class="news__link" href="#">一覧を見る ></a>
+        </div>
+        <!-- news__title-link -->
+        <div class="news-box">
+          <div class="row">
+            <div class="events">
+              <time class="events__date" datetime="date">2020.03.14</time>
+              <h3 class="events-tab">プレス</h3>
+            </div>
+            <p class="events__text"> 【東京オリンピック会場跡地再開発計画】複合スポーツ施設及び新テーマパーク工事開始のお知らせ</p>
+          </div>
+          <!-- row -->
+          <div class="row">
+            <div class="events">
+              <time class="events__date" datetime="date">2020.02.30</time>
+              <h3 class="events-tab">IR</h3>
+            </div>
+            <p class="events__text">2019年9月期　第1四半期決算説明会動画</p>
+          </div>
+          <!-- row -->
+          <div class="row">
+            <div class="events">
+              <time class="events__date" datetime="date">2020.02.30</time>
+              <h3 class="events-tab">IR</h3>
+            </div>
+            <p class="events__text">2019年9月期　第1四半期決算説明会資料</p>
+          </div>
+          <!-- row -->
+        </div>
+        <!-- news-box -->
+      </div>
+      <!-- news__wrapper -->
+    </div>
+  </section>
+  <section>
+    <div class="service">
+      <h1 class="section__title">Service</h1>
+      <p class="service__text">CITY Labの事業</p>
+      <div class="service__wrapper">
+        <div class="service__img">
+          <figure class="service__img-item">
+            <img src="img/service01.jpg" alt="service01">
+          </figure>
+        </div>
+        <div class="service__img">
+          <figure class="service__img-item">
+            <img src="img/service02.jpg" alt="service02">
+          </figure>
+        </div>
+        <div class="service__img">
+          <figure class="service__img-item">
+            <img src="img/service03.jpg" alt="service03">
+          </figure>
+        </div>
+      </div>      
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
